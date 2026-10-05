@@ -1,0 +1,51 @@
+[
+  {
+    "key": "allowed_root",
+    "type": "directory",
+    "label": "Allowed source directory",
+    "help": "Required. Relative file paths are resolved here; files outside this directory and symbolic links are refused."
+  },
+  {
+    "key": "max_audio_sec",
+    "type": "integer",
+    "min": 1,
+    "max": 600,
+    "label": "Maximum audio duration (s)",
+    "help": "A longer file is rejected completely, never silently truncated."
+  },
+  {
+    "key": "queue_size",
+    "type": "integer",
+    "min": 1,
+    "max": 16,
+    "label": "Pending files",
+    "help": "One file streams at a time. Additional files wait in this bounded queue; overflow is reported."
+  },
+  {
+    "key": "max_input_mib",
+    "type": "integer",
+    "min": 1,
+    "max": 64,
+    "label": "Maximum source size (MiB)",
+    "help": "Bounds the private source snapshot. Source files are never modified.",
+    "advanced": true
+  },
+  {
+    "key": "prepare_timeout_sec",
+    "type": "integer",
+    "min": 1,
+    "max": 120,
+    "label": "Preparation timeout (s)",
+    "help": "Deadline for copying, validation and local FFmpeg conversion before streaming begins.",
+    "advanced": true
+  },
+  {
+    "key": "bitrate_kbps",
+    "type": "integer",
+    "min": 24,
+    "max": 192,
+    "label": "WAV conversion bitrate (kb/s)",
+    "help": "PCM16 WAV is converted to 48 kHz Opus. Existing Ogg/Opus packets are remuxed without re-encoding.",
+    "advanced": true
+  }
+]

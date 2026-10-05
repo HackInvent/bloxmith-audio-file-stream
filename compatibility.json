@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "kind": "audio_file_stream",
+  "block_version": "0.1.0",
+  "maintained_by": "HackInvent",
+  "source": {
+    "algorithm": "block-source-v1",
+    "sha256": "1eb48f3c7f477ec5b7c16a677305536d61d2faa317865c3206d7d184a2334d7e"
+  },
+  "bloxsmith_compatibility": [
+    "1.0.9"
+  ],
+  "tested_with_bloxsmith": "1.0.9",
+  "validations": [
+    {
+      "bloxsmith_version": "1.0.9",
+      "framework_commit": "f1a87f6369d2acfb8be41d23ea849384cd461c86",
+      "framework_source_sha256": "66e36a13fd9a23a0a0576ec81552d6e479671db6db9b8692cc7486c5aac4f3b8",
+      "tested_at": "2026-10-05T18:55:18.602970+00:00",
+      "status": "passed",
+      "installation_mode": "bundled",
+      "suite_paths": [
+        "tests/F5.01_audio_file_stream.py",
+        "tests/F5.02_audio_file_stream_runtime.py",
+        "tests/F8.01_audio_file_stream_ui.py"
+      ],
+      "suite_count": 3,
+      "report_sha256": "b01d9ab368b348052221850e59e6437963590461c06ddc1745861460b47c01e1"
+    }
+  ]
+}
