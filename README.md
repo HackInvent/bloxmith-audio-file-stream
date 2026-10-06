@@ -8,7 +8,7 @@
 Verified BloxSmith versions: **1.0.9** (bundled-block tests; see [test evidence](compatibility.json)).
 <!-- block-metadata:end -->
 
-<p align="center"><img src="media/cover.png" alt="An audio file feeding a paced sound stream" width="640"></p>
+[![An audio file feeding a paced sound stream](media/thumbnail.webp)](media/cover.png)
 
 Turn a **completed local audio file** into a paced 48 kHz Opus stream for
 BloxSmith's Audio Play Stream, Save Audio, VAD or other compatible audio inputs.
